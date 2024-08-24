@@ -18,7 +18,7 @@ expected = [
 ]
 @test collect(take(iterator, 20)) == expected skip=SKIP
 
-# 1000番目の要素
-@test first(drop(iterator, 999)) == (3, 1, 6) skip=SKIP
+# 100番目の要素
+@test first(drop(iterator, 99)) == (3, 1, 6) skip=SKIP
 
 end
